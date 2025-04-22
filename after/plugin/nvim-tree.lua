@@ -22,6 +22,7 @@ end
     -- custom mappings
     vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent, opts('Up'))
     vim.keymap.set('n', 'l', api.node.open.preview, opts('Up'))
+    vim.keymap.set('n', 'h', api.node.open.preview, opts('Up'))
   	vim.keymap.set('n', '<C-y>', api.tree.change_root_to_node,          opts('CD'))
     -- vim.keymap.set('n', ';', api.node.tree.change_root_to_node, opts('CD'))
     -- vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
@@ -66,7 +67,7 @@ nvim_tree.setup {
     relativenumber = false,
     signcolumn = "yes",
     float = {
-      enable = true,
+      enable = false,
       quit_on_focus_loss = true,
       open_win_config = {
         relative = "editor",

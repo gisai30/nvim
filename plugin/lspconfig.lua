@@ -28,6 +28,27 @@ local lsp_flasgs = {
 }
 
 
+-- nvim_lsp.tsserver.setup {
+-- 	on_attach = function(client, bufnr)
+--         -- Llamar la función original on_attach si existe
+--         if on_attach then
+--             on_attach(client, bufnr)
+--         end
+--         -- La propiedad resolved_capabilities está obsoleta
+--         -- En su lugar, usar server_capabilities
+        
+--         -- Deshabilitar Inlay Hints
+-- 			-- print(client.server_capabilities.inlayHintProvider)	
+--         -- if client.server_capabilities.inlayHintProvider then
+						
+--             -- client.server_capabilities.inlayHintProvider = false
+--         -- end
+-- 			-- print(client.server_capabilities.inlayHintProvider)	
+--     end,
+--     filetypes = { "javascript", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+--     cmd = { "typescript-language-server", "--stdio" },
+--     capabilities = capabilities
+-- }
 nvim_lsp.tsserver.setup {
 	on_attach = on_attach,
 	filetype = { "javascript", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
@@ -64,3 +85,7 @@ nvim_lsp.cssmodules_ls.setup {
 nvim_lsp.cssls.setup {
   capabilities = capabilities,
 }
+
+nvim_lsp.marksman.setup {}
+
+-- require("lvim.lsp.manager").setup("marksman")

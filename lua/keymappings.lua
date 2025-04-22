@@ -34,6 +34,9 @@ keymap.set('n', 'nf', 'gf')
 keymap.set('n', '<leader>bd', ':bd<cr>')
 keymap.set('n', '<leader>bq', ':bd!<cr>')
 
+-- Open new Buffer + Alpha
+keymap.set('n', '<leader>t', ':tabnew | :Alpha<CR>', opts)
+keymap.set('n', '<leader>t', ':tabnew <bar> :Alpha<CR>', opts)
 -- Delete backword
 keymap.set('n', 'dw', 'vb"_d')
 
@@ -51,7 +54,7 @@ keymap.set('n', 'sl', '<C-w>l')
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 --Tree
-vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle <CR>', opts)
+-- vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle <CR>', opts)
 -- vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeToggle <CR>', opts)
 vim.api.nvim_set_keymap('n', '<C-h>', ':NvimTreeFindFileToggle <CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>lt', ':NvimTreeFindFileToggle <CR>', opts)
@@ -63,16 +66,19 @@ vim.api.nvim_set_keymap('n', '<leader>jl', ":HopLineStart <CR>", opts)
 -- vim.api.nvim_set_keymap('n', 'fl', "<cmd>lua require'hop'.hint_patterns()<cr>", `pts)
 
 --Telescope
-vim.api.nvim_set_keymap('n', '<leader>ff', ":Telescope find_files <CR>", opts)
-vim.api.nvim_set_keymap('n', '<M-p>', ":Telescope find_files <CR>", opts)
-vim.api.nvim_set_keymap('n', '<d-p>', ":Telescope find_files <CR>", opts)
+-- vim.api.nvim_set_keymap('n', '<leader>ff', ":Telescope find_files <CR>", opts)
+-- vim.api.nvim_set_keymap('n', '<M-p>', ":Telescope find_files <CR>", opts)
+-- vim.api.nvim_set_keymap('n', '<d-p>', ":Telescope find_files <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>p', ":Telescope find_files <CR>", opts)
-vim.api.nvim_set_keymap('n', '<leader>fb', ":Telescope find_files <CR>", opts)
+-- vim.api.nvim_set_keymap('n', '<leader>fb', ":Telescope find_files <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fb', ":Telescope buffers <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>s', ":Telescope current_buffer_fuzzy_find <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>ft', ":Telescope <CR>", opts)
 vim.api.nvim_set_keymap('n', '<leader>fi', ":Telescope treesitter <CR>", opts)
+vim.api.nvim_set_keymap('n', '<leader>o', ":Telescope oldfiles <CR>", opts)
 
+--alpha
+vim.api.nvim_set_keymap('n', '<leader>a', ':Alpha <CR>', opts)
 
 -- OUTLINE
 -- vim.api.nvim_set_keymap('n', '<C-l>', ':SymbolsOutline<cr>', opts)

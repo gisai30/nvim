@@ -18,6 +18,7 @@ import axios from 'axios';
 function hola() {
   console.log('getsemani');
   return null;
+  console.log(12);
 }
 
 export default class Tower {

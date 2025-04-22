@@ -13,7 +13,7 @@ minimap.setup({
 	},
 	symbols = {
 		scroll_line = '',
-		encode = minimap.gen_encode_symbols.dot('4x2')
+		encode = minimap.gen_encode_symbols.dot('3x2')
 		-- scroll_view = ''
 	}
 })

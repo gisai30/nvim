@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.1744318430/share/lua/5.1/?.lua;/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.1744318430/share/lua/5.1/?/init.lua;/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.1744318430/lib/luarocks/rocks-5.1/?.lua;/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.1744318430/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/getsemaniibarra/.cache/nvim/packer_hererocks/2.1.1744318430/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -149,10 +149,10 @@ _G.packer_plugins = {
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["minimap.vim"] = {
+  ["mini.map"] = {
     loaded = true,
-    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/minimap.vim",
-    url = "https://github.com/wfxr/minimap.vim"
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/mini.map",
+    url = "https://github.com/echasnovski/mini.map"
   },
   ["modes.nvim"] = {
     loaded = true,
@@ -253,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-smoothie"] = {
+    loaded = true,
+    path = "/Users/getsemaniibarra/.local/share/nvim/site/pack/packer/start/vim-smoothie",
+    url = "https://github.com/psliwka/vim-smoothie"
   },
   ["vscode-es7-javascript-react-snippets"] = {
     loaded = true,

@@ -18,7 +18,11 @@ require('packer').startup(function(use)
 	use 'phaazon/hop.nvim'
 	-- use 'christoomey/vim-tmux-navigator'
 	use 'nvim-telescope/telescope.nvim'
-
+	-- use {
+	-- 	'nvim-telescope/telescope.nvim', tag = '0.1.8',
+	-- -- or                            , branch = '0.1.x',
+	-- 	requires = { {'nvim-lua/plenary.nvim'} }
+	-- }
 	-- Tree explorer
 	-- use 'nvim-tree/nvim-tree.lua'
 	-- use 'nvim-tree/nvim-web-devicons'
@@ -66,7 +70,8 @@ require('packer').startup(function(use)
 	-- https://github.com/tpope/vim-commentary
 
 	--Buffer Lines
-	use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
+	-- use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
+	use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
 	--LPS Saga -> Menu
 	use 'glepnir/lspsaga.nvim'

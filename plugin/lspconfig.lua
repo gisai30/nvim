@@ -49,7 +49,7 @@ local lsp_flasgs = {
 --     cmd = { "typescript-language-server", "--stdio" },
 --     capabilities = capabilities
 -- }
-nvim_lsp.tsserver.setup {
+nvim_lsp.ts_ls.setup {
 	on_attach = on_attach,
 	filetype = { "javascript", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
 	cmd = { "typescript-language-server", "--stdio" },

@@ -81,7 +81,18 @@ require('packer').startup(function(use)
 	use { "goolord/alpha-nvim", require = 'kyazdani42/nvim-web-devicons' }
 
 	-- Prettier and NULL ls
-	use 'jose-elias-alvarez/null-ls.nvim'
+	-- use 'jose-elias-alvarez/null-ls.nvim'
+	use {
+		"nvimtools/none-ls.nvim",
+		requires = {
+			"nvimtools/none-ls-extras.nvim",
+		},
+  }
+	-- 'nvimtools/none-ls.nvim'
+	-- use {
+	-- 	"nvimtools/none-ls.nvim",
+	-- 	requires = { "nvim-lua/plenary.nvim" }
+	-- }
 	use 'MunifTanjim/prettier.nvim'
 
 	-- Git

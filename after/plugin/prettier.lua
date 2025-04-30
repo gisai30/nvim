@@ -14,6 +14,6 @@ prettier.setup {
 		'less'
 	},
 	cli_options = {
-		tconfig_precedence = "prefer-file",
+		config_precedence = "prefer-file",
 	}
 }

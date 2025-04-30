@@ -2,7 +2,7 @@ local status, catp = pcall(require, 'catppuccin')
 if (not status) then return end
 -- cap
 catp.setup {
-	transparent_background = false,
+	transparent_background = true,
 	styles = {
 		comments = { "italic" },
 		properties = { "italic" },

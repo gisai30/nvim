@@ -68,6 +68,8 @@ require('packer').startup(function(use)
 	-- Comments
 	use 'tpope/vim-commentary'
 	-- https://github.com/tpope/vim-commentary
+	-- Folding
+	-- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
 	--Buffer Lines
 	-- use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }

@@ -30,3 +30,4 @@ vim.g.loaded_netrwPlugin = 1
 -- vim.g.minimap_highlight_range = 1
 -- vim.g.minimap_diffadd_color = 'git_colors'
 -- vim.g.minimap_diffremove_color = 'git_colors'
+-- Folding
